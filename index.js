@@ -84,20 +84,5 @@ function deployEnvironment() {
   ], (error, result) => {
     console.log(error, result)
   })
-  // github("get", "shell-script-test", "refs/heads/master", (error, result) => {
-  //   console.log(error, result)
-  // })
-  // const deploy = spawn(`serverless`, ['deploy'], {
-  //   cwd: serverlessConfigPath
-  // });
-  // deploy.stdout.on('data', (data) => {
-  //   console.log('' + data);
-  // });
-  // deploy.stderr.on('data', (data) => {
-  //   console.error('' + data);
-  // });
-  // deploy.on('close', (code) => {
-  //   console.log(`child process exited with code ${code}`);
-  // });
 }
 deployEnvironment()
